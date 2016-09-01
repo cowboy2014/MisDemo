@@ -18,13 +18,7 @@ import com.boss.demo.entity.User;
 import com.boss.demo.service.UserService;
 import com.opensymphony.xwork2.ActionContext;
 
-/**
- * @title  UserAction.java
- * @author �����ˣ��⽣��
- * @date 2014-7-10 ����02:37:08
- * @description TODO
- * @version �汾��V1.0
- */
+
 @Scope("prototype")
 @Controller("UserAction")
 public class UserAction extends BaseAction {
@@ -35,13 +29,7 @@ public class UserAction extends BaseAction {
 	private Long total;
 	private String result;
 	
-	/**
-	 * 
-	 * ������ƣ�toMainPage
-	 * ����˵������תmain.jsp
-	 * ����˵����
-	 * @return String
-	 */
+
 	public String toMainPage(){
 		String accNo=null;
 		Map<String,Object>  session =  ActionContext.getContext().getSession();

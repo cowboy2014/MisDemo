@@ -13,58 +13,58 @@ import com.boss.demo.entity.User;
 
 /**
  * @title  UserDaoImpl.java
- * @author ¥¥Ω®»À£∫Œ‚Ω£–€
- * @date 2014-7-10 œ¬ŒÁ12:22:39
+ * @author ÂàõÂª∫‰∫∫ÔºöÂê¥ÂâëÈõÑ
+ * @date 2014-7-10 ‰∏ãÂçà12:22:39
  * @description TODO
- * @version ∞Ê±æ£∫V1.0
+ * @version ÁâàÊú¨ÔºöV1.0
  */
 @Component("UserDao")
 public class UserDaoImpl extends BaseDaoImpl implements UserDao{
 
 	public void addUser(User user) {
-		save("addUser", user);
+		save("userInfoNSP.addUser", user);
 	}
 
 	public List<User> loadAllUser(Map<String, Object> map) {
-		List<User> user_list= find("selectAllUser",map);
+		List<User> user_list= find("userInfoNSP.selectAllUser",map);
 		return user_list;
 	}
 
 	public void deleteByUserID(Integer userID) {
 		
-		delete("deleteUserById", userID);
+		delete("userInfoNSP.deleteUserById", userID);
 	}
 
 	public User loadByUserID(Integer userID) {
-		User user = (User)findByID("selectUserById", userID);
+		User user = (User)findByID("userInfoNSP.selectUserById", userID);
 		return user;
 	}
 	public User loadByAccountNo(String accountNo) {
-		User user = (User)findByID("selectUserByNo", accountNo);
+		User user = (User)findByID("userInfoNSP.selectUserByNo", accountNo);
 		return user;
 	}
 	public String loadPwdByAccountNo(String accountNo){
-		String pwd = (String)findByID("selectPwdByNo",accountNo);
+		String pwd = (String)findByID("userInfoNSP.selectPwdByNo",accountNo);
 		return pwd;
 	}
 	public void updateUser(User user) {
 		
-		update("updateUser", user);
+		update("userInfoNSP.updateUser", user);
 	}
 	
 	public List<Map<String, Object>>  loadByName_No(Map<String, Object> map){
 		List<Map<String, Object>> list=null;
 		if(map.get("accountNo").equals(""))
-			list=search("selectUsersByName", map);
+			list=search("userInfoNSP.selectUsersByName", map);
 		else if(map.get("name").equals(""))
-			list=search("selectUsersByAccountNo", map);
+			list=search("userInfoNSP.selectUsersByAccountNo", map);
 		else
-			list=search("selectUsersByName_No", map);
+			list=search("userInfoNSP.selectUsersByName_No", map);
 		return list;
 	}
 
 	public Integer loadUserCount(User user) {
-		Integer count = (Integer)count("selectUserCount",user);
+		Integer count = (Integer)count("userInfoNSP.selectUserCount",user);
 		return count;
 	}
 

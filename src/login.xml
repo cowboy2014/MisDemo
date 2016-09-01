@@ -4,17 +4,13 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-    
     <package name="loginPack" namespace="/" extends="demo-default">
         <action name="*" class="LoginAction" method="{1}">
             <result name="login">/page/login.jsp</result>
-            
-            <result  type="json">
-            	<param name="root">result</param>
-            	
+            <result type="json">
+                <param name="root">result</param>
             </result>
-           
         </action>
     </package>
-    
+
 </struts>

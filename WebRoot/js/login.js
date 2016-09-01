@@ -34,9 +34,7 @@ $(document).ready(function(){
 		          var result = eval('('+result+')');
 		          
 		          if (result=="\"login...\""){	
-		        	
-		            
-		            location.href ='user/toMainPage.do';
+		            location.href ='user/user_toMainPage.do';
 		            
 		          } else {
 		        	  $.messager.confirm('提示', result);

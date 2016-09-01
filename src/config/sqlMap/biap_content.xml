@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="biapNSP">
+<!-- 通过typeAlias使得我们在下面使用Student实体类的时候不需要写包名 -->
+<typeAlias alias="Tbale" type="com.lijx.direcotry.entity.TableInfo" />
+
+<resultMap id="tableMap" class="Tbale">
+	<result property="tab_schema" column="tab_schema"/>
+	<result property="tab_name" column="tab_name"/>
+	<result property="tab_comment" column="tab_comment"/>
+</resultMap>
+<!-- 表查询 -->
+
+
+<!-- 删除用户 -->
+
+<!-- 修改用户信息 -->
+
+<!-- 查询 -->
+<select id="selectAllTable" resultMap="tableMap">
+	select TABLE_SCHEMA,TABLE_NAME ,TABLE_COMMENT FROM TABLES
+</select>
+
+<select id="selectTbaleByName" parameterClass="Tbale" resultMap="tableMap">
+	select TABLE_SCHEMA,TABLE_NAME ,TABLE_COMMENT FROM TABLES where TABLE_NAME LIKE '%$tab_name$%'
+</select>
+
+</sqlMap>

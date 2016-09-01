@@ -4,31 +4,31 @@ package com.lijx.direcotry.entity;
  * Created by Administrator on 2016/5/10.
  */
 public class TableInfo {
-    private String schema;
-    private String tabname;
-    private String tabmean;
+    private String tab_schema;
+    private String tab_name;
+    private String tab_comment;
 
-    public String getSchema() {
-        return schema;
+    public String getTab_schema() {
+        return tab_schema;
     }
 
-    public void setSchema(String schema) {
-        this.schema = schema;
+    public void setTab_schema(String tab_schema) {
+        this.tab_schema = tab_schema;
     }
 
-    public String getTabname() {
-        return tabname;
+    public String getTab_name() {
+        return tab_name;
     }
 
-    public void setTabname(String tabname) {
-        this.tabname = tabname;
+    public void setTab_name(String tab_name) {
+        this.tab_name = tab_name;
     }
 
-    public String getTabmean() {
-        return tabmean;
+    public String getTab_comment() {
+        return tab_comment;
     }
 
-    public void setTabmean(String tabmean) {
-        this.tabmean = tabmean;
+    public void setTab_comment(String tab_comment) {
+        this.tab_comment = tab_comment;
     }
 }
