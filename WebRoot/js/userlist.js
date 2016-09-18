@@ -8,7 +8,7 @@ $(document).ready(function(){
 		collapsible : false,
 		url :url, 
 		remoteSort: false,
-		title:'用户管理',
+		title:'前台目录配置管理',
 //		pageNumber : 1,
 //		pageSize : 20,
 		columns : [[ 
