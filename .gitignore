@@ -57,3 +57,10 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+.idea/encodings.xml
+.idea/encodings.xml
+.idea/uiDesigner.xml
+MisDemo.iml
+*.iml
+.idea/vcs.xml
+.idea/webContexts.xml
