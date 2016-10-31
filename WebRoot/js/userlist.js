@@ -1,4 +1,4 @@
-var url='showUsers.do'
+var url='user_showUsers.do'
 $(document).ready(function(){ 
 	$('#searchfrm').form('clear');
 	$('#userGrid').datagrid( {
@@ -38,7 +38,7 @@ $(document).ready(function(){
 	                    if (data) {                   	
 	                    	
 	                    	 $.ajax({  
-	                             url:'removeUser.do?user.userID='+post.userID,    
+	                             url:'user_removeUser.do?user.userID='+post.userID,
 	                             success:function(result){
 	                            	 $.messager.show({msg:result,timeout:2500});
 	                                 $('#userGrid').datagrid('reload');
@@ -95,7 +95,7 @@ $(document).ready(function(){
     		{
     	if($('#addfrm #accountNo').attr("disabled")!="disabled"){
 	    	$.ajax({  
-	            url:'checkAccountNo.do?user.accountNo='+$('.td_c #accountNo').val(),  
+	            url:'user_checkAccountNo.do?user.accountNo='+$('.td_c #accountNo').val(),
 	            type : "POST",
 				dataType:"json",
 	            success:function(obj){            	
@@ -134,7 +134,7 @@ function Open_AddDialog() {
 	handler: function() {
 		
 		 $('#addfrm').form('submit',{
-		        url: 'saveUser.do',
+		        url: 'user_saveUser.do',
 		        onSubmit: function(){
 		          return $(this).form('validate');
 		        },
@@ -178,7 +178,7 @@ function Open_EditDialog(row) {
 	handler: function() {
 		
 		 $('#addfrm').form('submit',{
-		        url: 'modifyUser.do',
+		        url: 'user_modifyUser.do',
 		        onSubmit: function(){
 		          return $(this).form('validate');
 		        },

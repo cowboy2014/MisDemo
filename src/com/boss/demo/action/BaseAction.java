@@ -14,18 +14,14 @@ import com.opensymphony.xwork2.ActionSupport;
 
 /**
  * @title  BaseAction.java
- * @author 创建人：吴剑雄
- * @date 2014-7-10 下午12:19:28
- * @description TODO
- * @version 版本：V1.0
  */
 
 @SuppressWarnings("serial")
 public class BaseAction extends ActionSupport implements java.io.Serializable {
-	protected static final String SUCCESS = "success";//成功
-	protected static final String ERROR = "error";//失败
+	protected static final String SUCCESS = "success";//???
+	protected static final String ERROR = "error";//???
 	
-	protected Message msg;//返回的信息
+	protected Message msg;//????????
 	
 	/**
 	 * 
@@ -51,16 +47,16 @@ public class BaseAction extends ActionSupport implements java.io.Serializable {
 	}
 	
 	/**
-	 * <p>函数名称： success</p>
-	 * <p>功能说明：返回成功信息
+	 * <p>????????? success</p>
+	 * <p>??????????????????
 	 *
 	 * </p>
-	 *<p>参数说明：</p>
+	 *<p>?????????</p>
 	 * @param text
 	 * @return
 	 *
-	 * @date   创建时间：2012-3-16
-	 * @author 作者：bill
+	 * @date   ???????2012-3-16
+	 * @author ?????bill
 	 */
 	protected String success(String text) {
 		msg = new Message(text, 1);
@@ -68,31 +64,31 @@ public class BaseAction extends ActionSupport implements java.io.Serializable {
 	}
 	
 	/**
-	 * <p>函数名称：success</p>
-	 * <p>功能说明：返回成功信息
+	 * <p>?????????success</p>
+	 * <p>??????????????????
 	 *
 	 * </p>
-	 *<p>参数说明：</p>
+	 *<p>?????????</p>
 	 * @return
 	 *
-	 * @date   创建时间：2012-3-16
-	 * @author 作者：bill
+	 * @date   ???????2012-3-16
+	 * @author ?????bill
 	 */
 	protected String success() {
-		return success("操作成功");
+		return success("???????");
 	}
 	
 	/**
-	 * <p>函数名称： error</p>
-	 * <p>功能说明：返回失败信息
+	 * <p>????????? error</p>
+	 * <p>???????????????????
 	 *
 	 * </p>
-	 *<p>参数说明：</p>
+	 *<p>?????????</p>
 	 * @param text
 	 * @return
 	 *
-	 * @date   创建时间：2012-3-16
-	 * @author 作者：bill
+	 * @date   ???????2012-3-16
+	 * @author ?????bill
 	 */
 	protected String error(String text) {
 		msg = new Message(text, 0);
@@ -100,24 +96,24 @@ public class BaseAction extends ActionSupport implements java.io.Serializable {
 	}
 	
 	/**
-	 * <p>函数名称： error</p>
-	 * <p>功能说明：返回失败信息
+	 * <p>????????? error</p>
+	 * <p>???????????????????
 	 *
 	 * </p>
-	 *<p>参数说明：</p>
+	 *<p>?????????</p>
 	 * @return
 	 *
-	 * @date   创建时间：2012-3-16
-	 * @author 作者：bill
+	 * @date   ???????2012-3-16
+	 * @author ?????bill
 	 */
 	protected String error() {
-		return error("操作失败");
+		return error("???????");
 	}
 	
 
 	/**
-	 * 要申明为public才可以
-	 * 输出的信息
+	 * ??????public?????
+	 * ????????
 	 * @author bill
 	 */
 	public static class Message {

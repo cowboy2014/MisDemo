@@ -14,13 +14,6 @@ import com.boss.demo.dao.UserDao;
 import com.boss.demo.entity.User;
 import com.boss.demo.service.UserService;
 
-/**
- * @title  UserServiceImpl.java
- * @author 创建人：吴剑雄
- * @date 2014-7-10 下午12:23:15
- * @description TODO
- * @version 版本：V1.0
- */
 @Service("UserService")
 @Transactional(readOnly=true)
 public class UserServiceImpl implements UserService {
@@ -29,7 +22,7 @@ public class UserServiceImpl implements UserService {
 	private UserDao userDao;
 	
 	/**
-	 * 添加用户
+	 *
 	 * @throws Exception 
 	 */
 	@Transactional(rollbackFor=Exception.class)

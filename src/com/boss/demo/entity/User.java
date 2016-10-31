@@ -6,22 +6,15 @@ package com.boss.demo.entity;
 
 import java.util.Date;
 
-/**
- * @title  User.java
- * @author ´´½¨ÈË£ºÎâ½£ĞÛ
- * @date 2014-7-9 ÏÂÎç02:51:33
- * @description TODO
- * @version °æ±¾£ºV1.0
- */
 public class User extends ValueObject {
 	
-	private Integer userID;	//ÓÃ»§ID
-	private String accountNo; //µÇÂ¼ÕËºÅ	
-	private String password; //µÇÂ¼ÃÜÂë
+	private Integer userID;	//ï¿½Ã»ï¿½ID
+	private String accountNo; //ï¿½ï¿½Â¼ï¿½Ëºï¿½	
+	private String password; //ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½
 	
-	private String name; //ÓÃ»§ĞÕÃû
-	private String email; //ÓÊÏäµØÖ·
-	private String phone; //µç»°
+	private String name; //ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
+	private String email; //ï¿½ï¿½ï¿½ï¿½ï¿½Ö·
+	private String phone; //ï¿½ç»°
 
 	
 	public Integer getUserID() {

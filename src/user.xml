@@ -6,11 +6,10 @@
 <struts>
     
     <package name="userMgr" namespace="/user" extends="demo-default">
-        <action name="*" class="UserAction" method="{1}">
+        <action name="user_*" class="UserAction" method="{1}">
         	<result name="back">/page/login.jsp</result>
             <result name="main">/page/main.jsp</result>
-            <result  type="json"> </result>
-           
+            <result type="json"> </result>
         </action>
     </package>
     

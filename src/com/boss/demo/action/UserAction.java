@@ -16,16 +16,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @title  UserAction.java
- * @author �����ˣ��⽣��
- * @date 2014-7-10 ����02:37:08
- * @description TODO
- * @version �汾��V1.0
- */
+
 @Scope("prototype")
 @Controller("UserAction")
 public class UserAction extends BaseAction {
+	
     @Autowired
     private UserService userService;
     private User user;
@@ -33,13 +28,6 @@ public class UserAction extends BaseAction {
     private Long total;
     private String result;
 
-    /**
-     *
-     * ������ƣ�toMainPage
-     * ����˵������תmain.jsp
-     * ����˵����
-     * @return String
-     */
     public String toMainPage(){
         String accNo=null;
         Map<String,Object>  session =  ActionContext.getContext().getSession();
@@ -171,7 +159,5 @@ public class UserAction extends BaseAction {
     public void setResult(String result) {
         this.result = result;
     }
-
-
 
 }

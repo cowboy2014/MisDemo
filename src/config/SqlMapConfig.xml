@@ -9,7 +9,8 @@
 	  maxRequests="3000"
 	  maxSessions="3000"
 	  maxTransactions="3000"
-	  useStatementNamespaces="false"
+	  useStatementNamespaces="true"
 	  />
 	<sqlMap resource="com/boss/demo/entity/User_Map.xml"/>
+	<sqlMap resource="config/sqlMap/biap_content.xml"/>
 </sqlMapConfig>

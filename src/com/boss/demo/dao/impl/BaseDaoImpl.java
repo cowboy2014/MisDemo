@@ -48,6 +48,9 @@ public class BaseDaoImpl extends SqlMapClientDaoSupport implements BaseDao {
 	public List find(String statementName,Object parameterObject){
 		return getSqlMapClientTemplate().queryForList(statementName, parameterObject);
 	}
+	public List findAll(String statementName){
+		return getSqlMapClientTemplate().queryForList(statementName);
+	}
 	public Object count(String statementName,Object parameterObject){
 		return getSqlMapClientTemplate().queryForObject(statementName,parameterObject);
 	}
